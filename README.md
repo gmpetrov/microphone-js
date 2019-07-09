@@ -6,7 +6,7 @@ uses browser's api MediaDevices.getUserMedia()
 
 ## usage
 ```javascript
-import Microphone from 'microphone'
+import Microphone from 'microphone-js'
 
 const mic = Microphone();
 // const mic = Microphone({nbChannels: 1}); if you yant mono
@@ -20,3 +20,9 @@ const blob = mic.getBlob();
 
 mic.download();
 ```
+
+## Resources
+---
+- [http://soundfile.sapp.org/doc/WaveFormat/](http://soundfile.sapp.org/doc/WaveFormat/)
+- [https://gist.github.com/meziantou/edb7217fddfbb70e899e](https://gist.github.com/meziantou/edb7217fddfbb70e899e)
+- [https://github.com/alexjoverm/typescript-library-starter](https://github.com/alexjoverm/typescript-library-starter)

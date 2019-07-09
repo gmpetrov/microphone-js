@@ -1,6 +1,6 @@
 {
-  "name": "microphone",
-  "version": "0.0.0",
+  "name": "microphone-js",
+  "version": "0.0.1",
   "description": "",
   "keywords": [],
   "main": "dist/microphone.umd.js",
@@ -12,7 +12,7 @@
   "author": "Georges Petrov <georges.ptrv@gmail.com>",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/gmpetrov/microphone"
   },
   "license": "MIT",
   "engines": {
