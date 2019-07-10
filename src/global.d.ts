@@ -22,6 +22,6 @@ interface MicrophoneInstance {
   start: () => void
   stop: () => void
   reset: () => void
-  download: (blob: Blob) => void
+  download: (blob?: Blob) => void
   getBlob: () => Blob | undefined
 }

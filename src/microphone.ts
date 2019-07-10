@@ -118,7 +118,7 @@ const Microphone = (customConfig?: CustomConfig): MicrophoneInstance => {
     blob = encodeWav(array)
   }
 
-  const download = (blob: Blob) => {
+  const download = (blob?: Blob) => {
     if (!blob || !window || !document || !URL) {
       return
     }
