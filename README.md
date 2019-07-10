@@ -19,10 +19,16 @@ mic.start();
 
 mic.stop();
 
+// continue recording
+mic.start();
+
 // stereo audio/wav PCM 16 bits 44100 Hz 
 const blob = mic.getBlob();
 
-mic.download();
+mic.download(blob);
+
+// reset recording buffer
+mic.reset();
 ```
 
 ## Resources
