@@ -1,6 +1,12 @@
-# Microphone.js
+<div align="center">
+        <img src="media/logo.png" title="logo" alt="logo" width="500">
+        <p>
+                <b>A tiny library for converting browser's audio to WAV/PCM</b>
+        </p>
+        <br>
+</div>
 
-A tiny library for converting browser's audio to WAV/PCM
+
 **zero** dependency  
 uses browser's api MediaDevices.getUserMedia()
 
