@@ -62,13 +62,21 @@ export const Microphone = (
     );
 
     recorder.onaudioprocess = (event: AudioProcessingEvent) => {
-      audioState.leftChan.push(
-        new Float32Array(event.inputBuffer.getChannelData(LEFT_CHAN_DATA))
+      const left: Float32Array = new Float32Array(
+        event.inputBuffer.getChannelData(LEFT_CHAN_DATA)
       );
+
+      audioState.leftChan.push(left);
+
       audioState.rightChan.push(
         new Float32Array(event.inputBuffer.getChannelData(RIGHT_CHAN_DATA))
       );
+
       audioState.recordingLength += config.bufferSize;
+
+      if (instanceConfig && instanceConfig.onData) {
+        instanceConfig.onData(left);
+      }
     };
 
     source.connect(volume);

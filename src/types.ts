@@ -14,6 +14,7 @@ interface Config {
 interface InstanceConfig {
   isMono?: boolean;
   sampleRate?: number;
+  onData?: (data: any) => any;
 }
 
 interface MicrophoneInstance {
